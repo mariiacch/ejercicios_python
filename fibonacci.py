@@ -18,7 +18,7 @@ def fibonacci():
     num1, num2 = 0, 1  # caso base
     print(f'{num1}')
     print(f'{num2}')
-    for i in range(n-1):
+    for i in range(n):
         num3 = num1+num2
         print(f'{num3}')
         num1 = num2  # 1
