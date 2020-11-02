@@ -8,8 +8,8 @@ Sólo puedes usar una función
  recursiva (pro tip: no olvides tu caso base).
 
  """
-palabra = input(' Escribe palabra a repetir:  ')
-n = int(input(' Escribe numero de repeticion: '))
+#palabra = input(' Escribe palabra a repetir:  ')
+#n = int(input(' Escribe numero de repeticion: '))
 
 
 def cadena(palabra, n):
@@ -19,8 +19,8 @@ def cadena(palabra, n):
     if n == 1:  # caso base para poner punto de finalizacion
         return palabra
 
-    return palabra + cadena(palabra, n - 1)  # caso recursivo como hay que repetir se le resta una vez la repeticion para cumplir el objetivo
-    
+    # caso recursivo como hay que repetir se le resta una vez la repeticion para cumplir el objetivo
+    return palabra + cadena(palabra, n - 1)
 
 
-print(cadena(palabra, n))
+print(cadena('maria', 2))
