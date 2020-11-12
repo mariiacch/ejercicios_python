@@ -28,7 +28,6 @@ forma ineficiente:
 def run():
     vocal = ('a', 'e', 'i', 'o', 'u')
     cadena = str(input('escriba el texto a traducir '))
-    nuevafrase = []
 
     for palabra in cadena:
         if cadena[0] in vocal:
